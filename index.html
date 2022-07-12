@@ -128,18 +128,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -173,6 +173,112 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/11/HDLBits-1-Getting-Started/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mozes">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mozes-Y">
+      <meta itemprop="description" content="最是人间留不住，朱颜辞镜花辞树。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Mozes-Y">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/07/11/HDLBits-1-Getting-Started/" class="post-title-link" itemprop="url">HDLBits (1) Getting Started</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-07-11 22:24:23" itemprop="dateCreated datePublished" datetime="2022-07-11T22:24:23+08:00">2022-07-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-07-12 10:00:19" itemprop="dateModified" datetime="2022-07-12T10:00:19+08:00">2022-07-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/HDLBits/" itemprop="url" rel="index"><span itemprop="name">HDLBits</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>暑假闲来无事，作为一个微电子人，当然是要学习数字电子设计相关的东西啦，所以先来学习一波Verilog，作为学习Verilog最好的网站之一（个人觉得其实是最好的( •̀ ω •́ )✧），刷<a target="_blank" rel="noopener" href="https://hdlbits.01xz.net/wiki/Main_Page">HDLBits</a>当然是不二之选啦。</p>
+<p>HDLBits基本分为几个大的模块，这篇是第一个大模块，也是开篇，其它的模块也会陆续更新的，希望能够完成吧，这里先开个新坑&#x3D;￣ω￣&#x3D;。</p>
+<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><h3 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h3><p>这里这个小标题和大标题是一样的，作为强迫症患者有点不能忍受哈哈哈</p>
+<p>这一小小篇章呢，基本上就是介绍了一下网站的大体内容和使用方法，并且有一道体验性质的Verilog题目来做一做。</p>
+<p>题目呢是让输出一个恒为高的电平，也是非常的简单，并且大体框架都给了，所以呢直接填就行。</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> top_module( <span class="keyword">output</span> one );</span><br><span class="line"></span><br><span class="line"><span class="comment">// Insert your code here</span></span><br><span class="line">    <span class="keyword">assign</span> one = [fixme];</span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<p>就是上面这道题了，我的答案如下</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assign</span> one = <span class="number">1&#x27;b1</span>;</span><br></pre></td></tr></table></figure>
+
+<p>然后这一小节就完成了，进入下一个小节。</p>
+<hr>
+<h3 id="Output-Zero"><a href="#Output-Zero" class="headerlink" title="Output Zero"></a>Output Zero</h3><p>这一小节呢，基本上还是体验性质的，说明了一下写代码时注意的事项以及支持的标准等等。</p>
+<p>题目呢和标题一致，就是和前一节一样，输出一个低电平而已，所以呢也算是非常简单了</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> top_module(</span><br><span class="line">    <span class="keyword">output</span> zero</span><br><span class="line">);<span class="comment">// Module body starts after semicolon</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<p>把答案填写在中间即可，预期是一行完成</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assign</span> zero = <span class="number">1&#x27;b0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>也是比较简单，那么这一个部分的内容就算结束了。</p>
+<hr>
+<p>这一整个章节呢算是一个对整体的介绍吧，简单让我们体验一下做题的流程，以及告知一些注意事项吧。那么就进入下一个大的部分，正式开始Verilog语言的练习。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

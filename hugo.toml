@@ -1,4 +1,13 @@
 baseURL = 'https://mozes-y.github.io/'
 languageCode = 'zh-CN'
-title = 'My New Blog Site'
-theme = 'PaperMod'
+title = "Mozes's Blog"
+theme = 'FixIt'
+defaultContentLanguage = 'zh-cn'
+[markup]
+  _merge = "shallow"
+[outputs]
+  _merge = "shallow"
+[taxonomies]
+  _merge = "shallow"
+  category = 'categories'
+  tag = 'tags'

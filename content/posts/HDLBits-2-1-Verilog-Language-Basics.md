@@ -2,6 +2,8 @@
 date = '2022-07-29T10:16:40+08:00'
 draft = false
 title = 'HDLBits 2.1 --Verilog Language ---Basics'
+categories = ['HDLBits']
+tags = ['Verilog', 'Digital Design']
 +++
 
 ---
